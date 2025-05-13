@@ -1,6 +1,7 @@
 {
   "symbols.files.associations": {
-    "*.excalidraw": "notebook"
+    "*.excalidraw": "notebook",
+    "*.service.ts": "ts",
   },
   "symbols.folders.associations": {
     "generated": "folder-prisma"
