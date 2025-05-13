@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@prisma/engines'
+  - esbuild
+  - prisma
