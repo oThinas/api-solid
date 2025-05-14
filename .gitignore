@@ -5,5 +5,8 @@ generated/
 # Build output
 build/
 
+# Test output
+coverage/
+
 # Environment variables
 .env
