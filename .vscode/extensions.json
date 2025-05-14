@@ -3,6 +3,7 @@
     "biomejs.biome",
     "yoavbls.pretty-ts-errors",
     "prisma.prisma",
-    "ms-azuretools.vscode-containers"
+    "ms-azuretools.vscode-containers",
+    "ms-azuretools.vscode-docker"
   ]
 }

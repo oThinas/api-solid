@@ -4,6 +4,10 @@
     "*.service.ts": "ts",
   },
   "symbols.folders.associations": {
-    "generated": "folder-prisma"
+    "generated": "folder-prisma",
+    "repositories": "folder-pipes",
+    "errors": "folder-red-outline",
+    "http": "folder-router",
+    "controllers": "folder-yellow",
   }
 }
