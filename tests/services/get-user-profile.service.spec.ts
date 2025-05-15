@@ -20,9 +20,9 @@ describe('Get User Profile Service', () => {
       password_hash: await hash('123456', 6),
     });
 
-    const { id, name } = await sut.execute(createdUser.id);
-    expect(id).toEqual(expect.any(String));
-    expect(name).toEqual('John Doe');
+    const user = await sut.execute(createdUser.id);
+    expect(user.id).toEqual(expect.any(String));
+    expect(user.name).toEqual('John Doe');
   });
 
   it('should not be able to get a user profile with wrong id', async () => {
