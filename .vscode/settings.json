@@ -9,5 +9,6 @@
     "errors": "folder-red-outline",
     "http": "folder-router",
     "controllers": "folder-yellow",
+    "factories": "folder-blue-outline",
   }
 }
