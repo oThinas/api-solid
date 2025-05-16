@@ -1,0 +1,11 @@
+import type { Gym } from 'generated/prisma';
+import type { GymsRepository } from '../gyms.repository';
+
+export class InMemoryGymsRepository implements GymsRepository {
+  public gyms: Gym[] = [];
+
+  async findById(id: string) {
+    const gym = this.gyms.find((gym) => gym.id === id);
+    return gym ?? null;
+  }
+}
