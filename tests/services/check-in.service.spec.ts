@@ -3,7 +3,6 @@ import { InMemoryGymsRepository } from '@/repositories/in-memory/in-memory-gyms.
 import { CheckInService } from '@/services/check-in.service';
 import { MaxDistanceError } from '@/services/errors/max-distance.error';
 import { MaxNumberOfCheckInsError } from '@/services/errors/max-number-of-check-ins.error';
-import { Prisma } from 'generated/prisma';
 import { afterEach } from 'node:test';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
@@ -65,12 +64,12 @@ describe('Check-in Service', () => {
   });
 
   it('should not be able to check in at distante gyms', async () => {
-    gymsRepository.gyms.push({
+    gymsRepository.create({
       id: 'gym-02',
       title: 'Gym 02',
       description: 'Gym 02 description',
-      latitude: new Prisma.Decimal(-23.46379),
-      longitude: new Prisma.Decimal(-46.5193484),
+      latitude: -23.46379,
+      longitude: -46.5193484,
       phone: '',
     });
 
