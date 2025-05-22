@@ -23,6 +23,6 @@ jobs:
           # Default: ''
           cache: 'pnpm'
 
-      - run: pnpm ci
+      - run: pnpm install
       - run: pnpm run test
 
