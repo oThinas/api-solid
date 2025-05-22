@@ -24,5 +24,6 @@ jobs:
           cache: 'pnpm'
 
       - run: pnpm install
+      - run: pnpx prisma generate
       - run: pnpm run test
 
