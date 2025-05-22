@@ -1,6 +1,7 @@
 # App
 
-GymPass Style App
+GymPass Style App.
+Testing e2e tests.
 
 ## Requisitos funcionais
 
