@@ -26,4 +26,3 @@ jobs:
       - run: pnpm install
       - run: pnpx prisma generate
       - run: pnpm run test
-
